@@ -3,22 +3,31 @@
 ## 사용 기술 stack
 
 `language`
+
 nodejs
 
 `framework`
+
 express
 
 `web server`
-3. nginx
+
+nginx
 
 `dev ops`
+
 aws ec2
+
 docker
+
 docker-compose
+
 docker-portainer
+
 git
 
 `tool`
+
 vsc
 
 ## 프로젝트 설명
