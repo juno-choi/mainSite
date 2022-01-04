@@ -30,7 +30,7 @@ vsc
 
 # 수정사항
 
-`21.01.04` jenkins pipeline을 작성하여 CI/CD 자동화
+`22.01.04` jenkins pipeline을 작성하여 CI/CD 자동화
 
 Dockerfile 및 docker-compse 파일 작성
 
