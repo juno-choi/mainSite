@@ -1,11 +1,686 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="choi juno main site">
+
+	<title>choi juno</title>
+
+  <!-- Web Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+	<!-- Bootstrap core CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<!-- Font Awesome CSS -->
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+	<!-- Animate css -->
+  <link href="assets/css/animate.css" rel="stylesheet">
+  <!-- Magnific css -->
+	<link href="assets/css/magnific-popup.css" rel="stylesheet">
+	<!-- Custom styles CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">
+  <!-- Responsive CSS -->
+  <link href="assets/css/responsive.css" rel="stylesheet">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="assets/images/ico/apple-touch-icon-57-precomposed.png">
+
+</head>
+
+<body>
+	<!-- Preloader -->
+	<div id="tt-preloader">
+		<div id="pre-status">
+			<div class="preload-placeholder"></div>
+		</div>
+	</div>
+
+	<!-- Home Section -->
+	<section id="home" class="tt-fullHeight" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
+		<div class="intro">
+			<div class="intro-sub">Back-end Engineer</div>
+			<h1>최준호 <span>choi juno</span></h1>
+			<p>안녕하세요. Back End Engineer 주니어 개발자 최준호입니다.<br/>아래 git-hub, blog를 통해 저를 확인해주세요!</p>
+
+      <div class="social-icons">
+        <ul class="list-inline">
+          <li><a href="https://github.com/juno-choi" target="_blank"><i class="fa fa-github"></i></a></li>
+          <li><a href="https://velog.io/@ililil9482" target="_blank"><i class="fa fa-bold"></i></a></li>
+        </ul>
+      </div> <!-- /.social-icons -->
+		</div>
+
+		<div class="mouse-icon">
+			<div class="wheel"></div>
+		</div>
+	</section><!-- End Home Section -->
+
+	<!-- Navigation -->
+	<header class="header">
+		<nav class="navbar navbar-custom" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"></a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="custom-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#resume">Resume</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#works">Works</a></li>
+					</ul>
+				</div>
+			</div><!-- .container -->
+		</nav>
+	</header><!-- End Navigation -->
+
+
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding">
+      <div class="container">
+        <h2 class="section-title wow fadeInUp">About Me</h2>
+
+        <div class="row">
+
+          <div class="col-md-4 col-md-push-8">
+            <div class="biography">
+              <div class="myphoto">
+                <img src="assets/images/im2.jpg" alt="">
+              </div>
+              <ul>
+                <li><strong>Name:</strong> 최준호</li>
+                <li><strong>Date of birth:</strong> 1994.10.30</li>
+                <li><strong>Address:</strong> 경기도 성남시 중원구 은행 1동</li>
+                <li><strong>Email:</strong> ililil9482@naver.com</li>
+              </ul>
+            </div>
+          </div> <!-- col-md-4 -->
+
+          <div class="col-md-8 col-md-pull-4">
+            <div class="short-info wow fadeInUp">
+              <h3>내가 생각하는 좋은 개발자</h3>
+              <p>오늘 당장의 개발 실력보다 오늘보다 내일 더 성장하는 개발자가 더 좋은 개발자라고 생각합니다. 저는 오늘보다 내일 더 성장하기 위해 꾸준히 개발 공부를 진행하고 있습니다.</p>
+            </div>
+
+            <div class="short-info wow fadeInUp">
+              <h3>What I Do?</h3>
+
+              <ul class="list-check">
+                <li>무언가를 만들어냈을때 성취감과 그 과정이 즐겁다고 생각합니다.</li>
+                <li>새로운 기술을 공부하는 것에 흥미가 있으며 거부감이 없습니다.</li>
+                <li>성장을 위해서는 꾸준함이 가장 중요하다고 생각합니다.</li>
+                <li>오늘보다 내일 더 성장하는 사람이 강한 사람이라고 생각합니다.</li>
+                <li>내일 더 성장하기 위해 github와 블로그를 운영하고 있습니다.</li>
+              </ul>
+            </div>
+          </div>
+
+
+        </div> <!-- /.row -->
+      </div> <!-- /.container -->
+    </section><!-- End About Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section section-padding">
+        <div class="container">
+            <h2 class="section-title wow fadeInUp">Resume</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="resume-title">
+                        <h3>Education</h3>
+                    </div>
+                    <div class="resume">
+                        <ul class="timeline">
+                            <li>
+                                <div class="posted-date">
+                                    <span class="month">13.03-19.02</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>평택대 정보통신학과</h3>
+                                            <span>정보통신학과 4년 졸업, 정보처리기사 합격</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p>평택대학교 정보통신학과를 졸업하였고 <br/>정보처리기사 자격 시험에 합격하였습니다.</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div><!-- /timeline-panel -->
+                            </li>
+
+                            <li class="timeline-inverted">
+                                <div class="posted-date">
+                                    <span class="month">19.03 - 19.09</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>비트캠프 강남점</h3>
+                                            <span>java 웹 프로그래머 양성 교육</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p>국비지원 웹 프로그래머 양성 교육을 수료하였습니다.<br/>Tsiner 프로젝트를 진행하였습니다.<br/><a href="https://www.youtube.com/watch?v=EtdQ358kNgE" target="_blank">영상 링크</a></p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div> <!-- /timeline-panel -->
+                            </li>
+
+                            <li>
+                                <div class="posted-date">
+                                  <span class="month">20.01-현재</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>CODEBLOCK</h3>
+                                            <span><a href="http://codeblock.kr/">회사 사이트</a></span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p>코드블럭사에서 cresh 프로젝트에 back-end 개발자로 참여하여 <br/>프로젝트를 진행하고 있습니다.<a herf="https://cresh.kr/">cresh 사이트</a></p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div><!-- /timeline-panel -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- /row -->
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="resume-title">
+                        <h3>Experience</h3>
+                    </div>
+                    <div class="resume">
+                        <ul class="timeline">
+                            <li class="timeline-inverted">
+                                <div class="posted-date">
+                                  <span class="month">19.03 - 19.09</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Tsigner Project</h3>
+                                            <span>Back end Engineer</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p>sns 로그인 기능 구현, 여행지 정보 api 불러오기 기능 구현, 여행지 숙소 정보 불러오기 기능 구현, 숙박 예약 기능 구현</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div> <!-- /timeline-panel -->
+                            </li>
+
+                            <li>
+                                <div class="posted-date">
+                                  <span class="month">20.01 - 현재</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Cresh Project</h3>
+                                            <span>Back end Engineer</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p>cresh 결제 기능 구현과 관리자 기능 구현 및 유지보수</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div><!-- /timeline-panel -->
+                            </li>
+
+                            <li class="timeline-inverted">
+                              <div class="posted-date">
+                                <span class="month">자세한 내용</span>
+                              </div><!-- /posted-date -->
+
+                              <div class="timeline-panel wow fadeInUp">
+                                  <div class="timeline-content">
+                                      <div class="timeline-heading">
+                                          <h3></h3>
+                                          <span></span>
+                                      </div><!-- /timeline-heading -->
+
+                                      <div class="timeline-body">
+                                        <p>자세한 사항은 <a href="https://catkin-basketball-7fa.notion.site/240832ae00ee49539664e862923f5b55" target="_blank">자기소개서</a>를 참고해주세요!</p>
+                                      </div><!-- /timeline-body -->
+                                  </div> <!-- /timeline-content -->
+                              </div> <!-- /timeline-panel -->
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- /row -->
+        </div><!-- /.container -->
+    </section><!-- End Resume Section -->
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section-padding">
+      <div class="container">
+        <h2 class="section-title wow fadeInUp">Back End</h2>
+        
+        <div class="row">
+          <div class="col-md-6">
+            <div class="skill-progress">
+              <div class="skill-title"><h3>JAVA</h3></div> 
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ><span>60%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Spring Boot</h3></div> 
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" ><span>40%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Mybtis, JPA</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" ><span>30%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Junit5</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" ><span>20%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Gradle,Maven</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ><span>60%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>intellij</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" ><span>50%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+
+
+          </div><!-- /.col-md-6 -->
+
+          <div class="col-md-6">
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Node.js</h3></div> 
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" ><span>30%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Express</h3></div> 
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" ><span>40%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Javascript</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" ><span>50%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Git</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ><span>60%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>VSC</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" ><span>30%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Eclipse</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" ><span>50%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+          </div><!-- /.col-md-6 -->
+        </div><!-- /.row -->
+
+        <h2 class="section-title wow fadeInUp">DevOps</h2>
+        
+        <div class="row">
+          <div class="col-md-6">
+            <div class="skill-progress">
+              <div class="skill-title"><h3>AWS</h3></div> 
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" ><span>20%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Naver Cloud</h3></div> 
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" ><span>30%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Nginx,Apache</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ><span>60%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>MySql</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" ><span>50%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+
+
+          </div><!-- /.col-md-6 -->
+
+          <div class="col-md-6">
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Tomcat</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" ><span>50%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Docker</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" ><span>30%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>compose</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" ><span>30%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Jenkins</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" ><span>30%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+
+          </div><!-- /.col-md-6 -->
+        </div><!-- /.row -->
+
+        <div class="skill-chart text-center">
+          <h3>More skills</h3>
+        </div>
+          
+        <div class="row more-skill text-center">
+          <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="40" data-color="e74c3c">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>HTML</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="23" data-color="2ecc71">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>CSS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="68" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>git-flow</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="38" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>Jira</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="20" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>MSA Architecture</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="10" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>Spring Cloud</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </div><!-- /.container -->
+    </section><!-- End Skills Section -->
+
+
+    <!-- Works Section -->
+    <section id="works" class="works-section section-padding">
+      <div class="container">
+        <h2 class="section-title wow fadeInUp">Works</h2>
+
+        <ul class="list-inline" id="filter">
+            <li><a class="active" data-group="all">All</a></li>
+            <li><a data-group="design">메인 사이트</a></li>
+            <li><a data-group="web">Eats</a></li>
+            <li><a data-group="interface">로그인 api</a></li>
+            <li><a data-group="identety">준비중1</a></li>
+        </ul>
+
+        <div class="row">
+          <div id="grid">
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "interface"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="assets/images/works/portfolio-1.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a href="#"><i class="fa fa-link"></i></a>                          
+                  </div><!-- /.links -->
+                  <img src="assets/images/works/portfolio-1.jpg" alt="image"> 
+                  <div class="portfolio-info">
+                    <h3>Portfolio Title</h3>
+                  </div><!-- /.portfolio-info -->
+                </div><!-- /.portfolio -->
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+
+
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "web"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="assets/images/works/portfolio-2.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a href="#"><i class="fa fa-link"></i></a>                          
+                  </div><!-- /.links -->
+                  <img src="assets/images/works/portfolio-2.jpg" alt="image"> 
+                  <div class="portfolio-info">
+                    <h3>Portfolio Title</h3>
+                  </div><!-- /.portfolio-info -->
+                </div><!-- /.portfolio -->
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "interface"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="assets/images/works/portfolio-3.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a href="#"><i class="fa fa-link"></i></a>                          
+                  </div><!-- /.links -->
+                  <img src="assets/images/works/portfolio-3.jpg" alt="image"> 
+                  <div class="portfolio-info">
+                    <h3>Portfolio Title</h3>
+                  </div><!-- /.portfolio-info -->
+                </div><!-- /.portfolio -->
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "design"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="assets/images/works/portfolio-4.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a href="#"><i class="fa fa-link"></i></a>                          
+                  </div><!-- /.links -->
+                  <img src="assets/images/works/portfolio-4.jpg" alt="image"> 
+                  <div class="portfolio-info">
+                    <h3>Portfolio Title</h3>
+                  </div><!-- /.portfolio-info -->
+                </div><!-- /.portfolio -->
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "design"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="assets/images/works/portfolio-5.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a href="#"><i class="fa fa-link"></i></a>                          
+                  </div><!-- /.links -->
+                  <img src="assets/images/works/portfolio-5.jpg" alt="image"> 
+                  <div class="portfolio-info">
+                    <h3>Portfolio Title</h3>
+                  </div><!-- /.portfolio-info -->
+                </div><!-- /.portfolio -->
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "design"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="assets/images/works/portfolio-6.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a href="#"><i class="fa fa-link"></i></a>                          
+                  </div><!-- /.links -->
+                  <img src="assets/images/works/portfolio-6.jpg" alt="image"> 
+                  <div class="portfolio-info">
+                    <h3>Portfolio Title</h3>
+                  </div><!-- /.portfolio-info -->
+                </div><!-- /.portfolio -->
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "web"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="assets/images/works/portfolio-7.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a href="#"><i class="fa fa-link"></i></a>                          
+                  </div><!-- /.links -->
+                  <img src="assets/images/works/portfolio-7.jpg" alt="image"> 
+                  <div class="portfolio-info">
+                    <h3>Portfolio Title</h3>
+                  </div><!-- /.portfolio-info -->
+                </div><!-- /.portfolio -->
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "design"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="assets/images/works/portfolio-8.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a href="#"><i class="fa fa-link"></i></a>                          
+                  </div><!-- /.links -->
+                  <img src="assets/images/works/portfolio-8.jpg" alt="image"> 
+                  <div class="portfolio-info">
+                    <h3>Portfolio Title</h3>
+                  </div><!-- /.portfolio-info -->
+                </div><!-- /.portfolio -->
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+          </div><!-- /#grid -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- End Works Section -->
+
+	<!-- Footer Section -->
+    <footer class="footer-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyright text-center">
+             Shared by <i class="fa fa-love"></i><a href="https://bootstrapthemes.co">BootstrapThemes</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer><!-- End Footer Section -->
+
+
+	<!-- Scroll-up -->
+	<div class="scroll-up">
+		<a href="#home"><i class="fa fa-angle-up"></i></a>
+	</div>
+
+	<!-- Javascript files -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.stellar.min.js"></script>
+	<script src="assets/js/jquery.sticky.js"></script>
+  <script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/jquery.countTo.js"></script>
+  <script src="assets/js/jquery.inview.min.js"></script> 
+  <script src="assets/js/jquery.easypiechart.js"></script>
+  <script src="assets/js/jquery.shuffle.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+  <script src="assets/js/jquery.fitvids.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
 </html>
