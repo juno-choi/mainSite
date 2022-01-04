@@ -1,0 +1,73 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('git pull') {
+            steps {
+                sshPublisher(
+                    publishers: [
+                        sshPublisherDesc(
+                            configName: 'masServer', 
+                            transfers: [
+                                sshTransfer(
+                                    execCommand: 'sudo docker exec express git pull', 
+                                )
+                            ]
+                        )
+                    ]
+                )
+            }
+        }
+        stage('npm install') {
+            steps {
+                sshPublisher(
+                    publishers: [
+                        sshPublisherDesc(
+                            configName: 'masServer', 
+                            transfers: [
+                                sshTransfer(
+                                    execCommand: 'sudo docker exec express npm install', 
+                                )
+                            ]
+                        )
+                    ]
+                )
+            }
+        }
+        
+        stage('container stop') {
+            steps {
+                sshPublisher(
+                    publishers: [
+                        sshPublisherDesc(
+                            configName: 'masServer', 
+                            transfers: [
+                                sshTransfer(
+                                    execCommand: 'sudo docker stop express', 
+                                )
+                            ]
+                        )
+                    ]
+                )
+            }
+        }
+        
+        stage('container start') {
+            steps {
+                sshPublisher(
+                    publishers: [
+                        sshPublisherDesc(
+                            configName: 'masServer', 
+                            transfers: [
+                                sshTransfer(
+                                    execCommand: 'sudo docker start express', 
+                                )
+                            ]
+                        )
+                    ]
+                )
+            }
+        }
+        
+    }
+}

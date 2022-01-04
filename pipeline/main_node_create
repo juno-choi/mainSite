@@ -1,0 +1,73 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('docker image rmi & compose down') {
+            steps {
+                sshPublisher(
+                    publishers: [
+                        sshPublisherDesc(
+                            configName: 'masServer', 
+                            transfers: [
+                                sshTransfer(
+                                    execCommand: 'cd /compose/mainSite && sudo docker-compose down && sudo docker rmi ililil9482/main_node ', 
+                                )
+                            ]
+                        )
+                    ]
+                )
+            }
+        }
+        stage('Dockerfile build') {
+            steps {
+                sshPublisher(
+                    publishers: [
+                        sshPublisherDesc(
+                            configName: 'masServer', 
+                            transfers: [
+                                sshTransfer(
+                                    execCommand: 'cd /compose/mainSite && sudo docker build -t ililil9482/main_node ./', 
+                                )
+                            ]
+                        )
+                    ]
+                )
+            }
+        }
+        
+        stage('docker hub push') {
+            steps {
+                sshPublisher(
+                    publishers: [
+                        sshPublisherDesc(
+                            configName: 'masServer', 
+                            transfers: [
+                                sshTransfer(
+                                    execCommand: 'sudo docker tag ililil9482/main_node ililil9482/main_node && sudo docker push ililil9482/main_node', 
+                                )
+                            ]
+                        )
+                    ]
+                )
+            }
+        }
+        
+        stage('docker-compose up') {
+            steps {
+                sshPublisher(
+                    publishers: [
+                        sshPublisherDesc(
+                            configName: 'masServer', 
+                            transfers: [
+                                sshTransfer(
+                                    execCommand: 'cd /compose/mainSite && sudo docker-compose up -d', 
+                                )
+                            ]
+                        )
+                    ]
+                )
+            }
+        }
+        
+    }
+}
