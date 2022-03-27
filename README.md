@@ -16,7 +16,7 @@ nginx
 
 `dev ops`
 
-aws ec2, docker, docker-compose, docker-portainer, git, jenkins
+aws ec2, docker, docker-compose, git, jenkins
 
 `tool`
 
@@ -24,7 +24,7 @@ vsc
 
 ## 프로젝트 설명
 
-토이 프로젝트들의 링크를 모아두고 자기 소개하는 메인 사이트
+토이 프로젝트들의 링크를 모아두고 자기 소개하는 Portfolio 사이트
 
 ---
 
@@ -35,4 +35,3 @@ vsc
 Dockerfile 및 docker-compse 파일 작성
 
 > https://github.com/juno-choi/toyProjectDockerfile
-
