@@ -1,0 +1,82 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Down') {
+            steps {
+sshPublisher(publishers: [
+  sshPublisherDesc(configName: 'aws',
+  transfers: [
+    sshTransfer(cleanRemote: false,
+    excludes: '',
+    execCommand: 'cd /project/portfolio && sudo docker-compose down',
+    execTimeout: 120000,
+    flatten: false,
+    makeEmptyDirs: false,
+    noDefaultExcludes: false,
+    patternSeparator: '[, ]+',
+    remoteDirectory: '',
+    remoteDirectorySDF: false,
+    removePrefix: '',
+    sourceFiles: '')
+  ],
+  usePromotionTimestamp: false,
+  useWorkspaceInPromotion: false,
+  verbose: false)
+])
+            }
+        }
+
+        stage('Pull') {
+            steps {
+sshPublisher(publishers: [
+  sshPublisherDesc(configName: 'aws',
+  transfers: [
+    sshTransfer(cleanRemote: false,
+    excludes: '',
+    execCommand: 'sudo docker pull ililil9482/portfolio:1.0',
+    execTimeout: 120000,
+    flatten: false,
+    makeEmptyDirs: false,
+    noDefaultExcludes: false,
+    patternSeparator: '[, ]+',
+    remoteDirectory: '',
+    remoteDirectorySDF: false,
+    removePrefix: '',
+    sourceFiles: '')
+  ],
+  usePromotionTimestamp: false,
+  useWorkspaceInPromotion: false,
+  verbose: false)
+])
+            }
+        }
+
+        stage('Up') {
+            steps {
+sshPublisher(publishers: [
+  sshPublisherDesc(configName: 'aws',
+  transfers: [
+    sshTransfer(cleanRemote: false,
+    excludes: '',
+    execCommand: 'cd /project/portfolio && sudo docker-compose up -d',
+    execTimeout: 120000,
+    flatten: false,
+    makeEmptyDirs: false,
+    noDefaultExcludes: false,
+    patternSeparator: '[, ]+',
+    remoteDirectory: '',
+    remoteDirectorySDF: false,
+    removePrefix: '',
+    sourceFiles: '')
+  ],
+  usePromotionTimestamp: false,
+  useWorkspaceInPromotion: false,
+  verbose: false)
+])
+            }
+        }
+        
+        
+    }
+}

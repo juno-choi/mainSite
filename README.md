@@ -30,8 +30,4 @@ vsc
 
 # 수정사항
 
-`22.01.04` jenkins pipeline을 작성하여 CI/CD 자동화
-
-Dockerfile 및 docker-compse 파일 작성
-
-> https://github.com/juno-choi/toyProjectDockerfile
+`22.03.27` jenkins pipeline을 작성하여 CI/CD 자동화
